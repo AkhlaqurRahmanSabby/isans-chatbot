@@ -1,0 +1,179 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #b2b2b2;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #616360;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Page Header */
+header {
+    text-align: center;
+    padding: 30px 15px;
+    background-color:  #aee39d;
+    font: poppins;
+    font-weight:bolder;
+    color:#201e1e
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Main Content */
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Filter Box */
+.filter-box {
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    margin-right: 20px; /* Add some space between filter and message */
+    border-radius: 15px;
+    border: solid;
+    padding: 2%;
+}
+
+.intro{
+    text-align: center;
+    padding:20px;
+    margin-top: 5%;
+    background-color: #f0ad4e;
+    height:fit-content;
+    width: 500px;
+    border-radius: 10px;
+    font:fantasy;
+    margin-right: 30px;
+    border: solid;
+    border-color: black
+  
+    
+}
+
+#display{
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form-group{
+    padding: 15px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+.results{
+padding-top: 30px; 
+padding-bottom: 50% ;
+}
+
+/* Message Box */
+.message-box {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: palatino;
+}
+
+#message-container {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow-y: scroll;
+    background-color: #f9f9f9;
+}
+
+#user-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.message {
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.user-message {
+    text-align: right;
+    color: blue;
+}
+
+.bot-message {
+    text-align: left;
+    color: green;
+}
+
+/* Button Styles */
+button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="reset"] {
+    background-color: #f0ad4e;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
