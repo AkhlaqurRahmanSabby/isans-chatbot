@@ -78,3 +78,20 @@
 2024-10-19 11:04:53,763 - INFO - Device set to cuda
 2024-10-19 11:04:56,086 - INFO - Loaded program embeddings from file.
 2024-10-19 11:04:56,089 - INFO - FAISS index created and embeddings added.
+2024-10-19 13:41:19,831 - INFO - Device set to cuda
+2024-10-19 13:41:22,114 - INFO - Loaded program embeddings from file.
+2024-10-19 13:41:22,118 - INFO - FAISS index created and embeddings added.
+2024-10-19 13:41:50,637 - INFO - Received basic query: Hi
+2024-10-19 13:41:50,639 - INFO - Matched basic reply for query 'hi': Hello! How can I help you today?
+2024-10-19 13:41:53,580 - INFO - Received basic query: youth
+2024-10-19 13:41:53,581 - INFO - No basic reply matched for query: youth
+2024-10-19 13:41:53,581 - INFO - Relevant programs found using eligibility criteria in 0.0 seconds.
+2024-10-19 13:41:53,581 - INFO - Programs retrieved for query: youth
+2024-10-19 13:41:58,121 - INFO - Received basic query: adult
+2024-10-19 13:41:58,121 - INFO - No basic reply matched for query: adult
+2024-10-19 13:41:58,121 - INFO - Relevant programs found using eligibility criteria in 0.0 seconds.
+2024-10-19 13:41:58,121 - INFO - Programs retrieved for query: adult
+2024-10-19 13:42:04,007 - INFO - Received basic query: I want young
+2024-10-19 13:42:04,007 - INFO - No basic reply matched for query: i want young
+2024-10-19 13:42:04,007 - INFO - Relevant programs found using eligibility criteria in 0.0 seconds.
+2024-10-19 13:42:04,007 - INFO - Programs retrieved for query: I want young
