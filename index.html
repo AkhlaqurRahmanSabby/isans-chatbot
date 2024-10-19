@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>EXPLORE OUR PROGRAMS AND SERVICES</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Programs</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+    <div class="content">
+    
+        <div class="filter-box">
+            <div class="header">
+                <h2>How to use the program filter</h2>
+                <p>Using the filter drop-downs, you can select from a number of options to show you the program that fits your unique background and settlement journey.</p>
+            </div>
+            <form id="programFilterForm">
+                <div class="search-bar">
+                    <input type="text" id="search" placeholder="Search..." />
+                </div>
+                <!-- Filter Form Groups -->
+                <div class="form-group">
+                    <label for="programPathways">Program Pathways</label>
+                    <select id="programPathways">
+                        <option value="all">All Program Pathways</option>
+                        <option value="pathway1">Connect With Community</option>
+                        <option value="pathway2">Diversify your Workforce</option>
+                        <option value="pathway3">Do Buisness</option>
+                        <option value="pathway4">Find Employment</option>
+                        <option value="pathway5">Get Settled</option>
+                        <option value="pathway6">Learn English</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="age">Ages</label>
+                    <select id="age">
+                        <option value="all">All Ages</option>
+                        <option value="15-25">15-25</option>
+                        <option value="26-40">26-40</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="literacy">Literacy Requirements</label>
+                    <select id="literacy">
+                        <option value="all">All Literacy Requirements</option>
+                        <option value="basic">Basic English</option>
+                        <option value="intermediate">Intermediate English</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="visaEligibility">Visa Eligibilities</label>
+                    <select id="visaEligibility">
+                        <option value="all">All Visa Eligibilities</option>
+                        <option value="permanentResident">Permanent Resident</option>
+                        <option value="workPermit">Work Permit</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="deliveryMethod">Delivery Methods</label>
+                    <select id="deliveryMethod">
+                        <option value="all">All Delivery Methods</option>
+                        <option value="online">Online</option>
+                        <option value="inPerson">In-person</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Genders</label>
+                    <select id="gender">
+                        <option value="all">All Genders</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <button type="submit" id="submitBtn">Submit</button>
+                <button type="reset" id="resetBtn">Reset</button>
+            </form>
+        </div>
+
+        <div class = "language">
+            <h1>Language</h1><br>
+            <form>
+           <label for="options">Choose an option</label><br>
+                <select id="options" name="options">
+                    <option value="option1">English</option>
+                    <option value="option2">French</option>
+                    <option value="option3">Arabic</option>
+                    <option value="option4">Punjabi</option>
+                </select>
+                </div>
+            </form>
+<div>
+        <div class = "intro"> 
+            
+        <ul id = display style = "list-style:none">
+            <p class = "needs">Find the right programs based on your:</p>
+            <li>Needs</li>
+            <li>Eligibility</li>
+            <li>Age</li>
+            <li>Literacy Requirements</li>
+            <li>Visa Eligibility</li>
+            <li>And More</li>
+        </ul></div>
+
+        <div> <img src = "th.jpg" alt ="icon" class = "picture">
+        </div>
+</div>
+          <br><br><br><br>
+        
+        <div class="message-box">
+            <div id="message-container">
+                <div class=" bot-message">ISANA: Welcome to ISAN'S chatBot, what can I help you with?</div>
+            </div>
+            <input type="text" id="user-input" placeholder="Type your message here..." onkeydown="handleKeyPress(event)">
+        </div>
+       
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
