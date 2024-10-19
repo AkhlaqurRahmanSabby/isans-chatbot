@@ -23,6 +23,7 @@
 
 
     <div class="content">
+    
         <div class="filter-box">
             <div class="header">
                 <h2>How to use the program filter</h2>
@@ -37,8 +38,12 @@
                     <label for="programPathways">Program Pathways</label>
                     <select id="programPathways">
                         <option value="all">All Program Pathways</option>
-                        <option value="pathway1">Pathway 1</option>
-                        <option value="pathway2">Pathway 2</option>
+                        <option value="pathway1">Connect With Community</option>
+                        <option value="pathway2">Diversify your Workforce</option>
+                        <option value="pathway3">Do Buisness</option>
+                        <option value="pathway4">Find Employment</option>
+                        <option value="pathway5">Get Settled</option>
+                        <option value="pathway6">Learn English</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -86,10 +91,23 @@
             </form>
         </div>
 
+        <div class = "language">
+            <h1>Language</h1><br>
+            <form>
+           <label for="options">Choose an option</label><br>
+                <select id="options" name="options">
+                    <option value="option1">English</option>
+                    <option value="option2">French</option>
+                    <option value="option3">Arabic</option>
+                    <option value="option4">Punjabi</option>
+                </select>
+                </div>
+            </form>
+<div>
         <div class = "intro"> 
             
         <ul id = display style = "list-style:none">
-            <p>Find the right programs for you based on the following:</p>
+            <p class = "needs">Find the right programs based on your:</p>
             <li>Needs</li>
             <li>Eligibility</li>
             <li>Age</li>
@@ -97,12 +115,15 @@
             <li>Visa Eligibility</li>
             <li>And More</li>
         </ul></div>
-       
-           
+
+        <div> <img src = "th.jpg" alt ="icon" class = "picture">
+        </div>
+</div>
+          <br><br><br><br>
         
         <div class="message-box">
             <div id="message-container">
-                <div class="message bot-message">Bot: Welcome to the ISANS Chatbot! How can I assist you today?</div>
+                <div class=" bot-message">ISANA: Welcome to ISAN'S chatBot, what can I help you with?</div>
             </div>
             <input type="text" id="user-input" placeholder="Type your message here..." onkeydown="handleKeyPress(event)">
         </div>
