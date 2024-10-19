@@ -75,3 +75,6 @@
 2024-10-18 12:38:37,018 - INFO - No basic reply matched for query: i am protected person
 2024-10-18 12:38:37,018 - INFO - Relevant programs found using eligibility criteria in 0.0 seconds.
 2024-10-18 12:38:37,018 - INFO - Programs retrieved for query: i am protected person
+2024-10-19 11:04:53,763 - INFO - Device set to cuda
+2024-10-19 11:04:56,086 - INFO - Loaded program embeddings from file.
+2024-10-19 11:04:56,089 - INFO - FAISS index created and embeddings added.
