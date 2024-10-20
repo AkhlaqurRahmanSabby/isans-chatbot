@@ -16,19 +16,18 @@ app = FastAPI()
 # ====== CORS Middleware Setup ======
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:8001"],  # Frontend URL; adjust if different
+    allow_origins=["http://localhost:8001"],  # Frontend URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# ====== Set up logging ======
 log_folder = os.path.join(os.path.dirname(os.path.abspath(__file__)), "logs")
 if not os.path.isdir(log_folder):
     try:
         os.makedirs(log_folder)
     except FileExistsError:
-        pass  # If folder was created in parallel by another process
+        pass
     
 logging.basicConfig(
     filename=os.path.join(log_folder, 'chatbot.log'),
@@ -37,18 +36,13 @@ logging.basicConfig(
     level=logging.INFO
 )
 
-# ====== Set up GPU if available ======
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 logging.info(f"Device set to {device}")
 
-# ====== Load or Generate Embeddings ======
 tokenizer = DistilBertTokenizer.from_pretrained('distilbert-base-uncased')
 model = DistilBertModel.from_pretrained('distilbert-base-uncased').to(device)
 
-# Find the absolute path of the current script's directory
 base_dir = os.path.dirname(os.path.abspath(__file__))
-
-# Use absolute paths for the programs file
 programs_file = os.path.join(base_dir, 'programs_with_embeddings.json')
 programs_json = os.path.join(base_dir, 'programs.json')
 
@@ -135,7 +129,6 @@ def get_relevant_programs(query, top_k=5):
                 relevant_programs.append(program)
                 seen_programs.add(program['id'])
 
-    # If relevant programs were found based on eligibility, return them
     if relevant_programs:
         logging.info(f"Relevant programs found using eligibility criteria in {time.time() - start_time} seconds.")
         return relevant_programs
@@ -170,13 +163,11 @@ def get_relevant_programs(query, top_k=5):
 
     return relevant_programs
 
-# ====== Generate Chatbot Response ======
 def generate_response(query):
     basic_reply = handle_basic_conversation(query)
     if basic_reply:
         return basic_reply
 
-    # Retrieve programs based on the refined search logic
     relevant_programs = get_relevant_programs(query)
     
     if relevant_programs:

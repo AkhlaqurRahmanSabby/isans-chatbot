@@ -95,3 +95,8 @@
 2024-10-19 13:42:04,007 - INFO - No basic reply matched for query: i want young
 2024-10-19 13:42:04,007 - INFO - Relevant programs found using eligibility criteria in 0.0 seconds.
 2024-10-19 13:42:04,007 - INFO - Programs retrieved for query: I want young
+2024-10-19 16:00:32,008 - INFO - Received basic query: Hi
+2024-10-19 16:00:32,024 - INFO - Matched basic reply for query 'hi': Hello! How can I help you today?
+2024-10-20 15:22:03,046 - INFO - Device set to cuda
+2024-10-20 15:22:05,036 - INFO - Loaded program embeddings from file.
+2024-10-20 15:22:05,036 - INFO - FAISS index created and embeddings added.

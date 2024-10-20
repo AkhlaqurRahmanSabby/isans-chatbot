@@ -1,10 +1,8 @@
 import json
 from sentence_transformers import SentenceTransformer
 
-# Initialize the model
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
-# Load programs
 with open('backend/programs.json', 'r') as file:
     programs = json.load(file)
 
@@ -14,7 +12,6 @@ for program in programs:
     embedding = model.encode(description)
     program['embedding'] = embedding.tolist()
 
-# Save programs with embeddings
 with open('backend/programs_with_embeddings.json', 'w') as file:
     json.dump(programs, file, indent=2)
 
